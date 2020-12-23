@@ -180,8 +180,8 @@ VOID FillListView(HWND hWndListView, std::vector<std::shared_ptr<TelephoneRecord
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
     HMODULE dll = NULL;
-    //std::wstring FileName = L"..\\Debug\\Test.txt";
-    std::wstring FileName = L"..\\Debug\\ReferenceBook.txt";
+    //std::wstring FileName = L"..\\Test.txt";
+    std::wstring FileName = L"..\\ReferenceBook.txt";
     
     if (message == WM_CREATE) {
         dll = LoadLibrary(L"./DirectoryWorker.dll");
